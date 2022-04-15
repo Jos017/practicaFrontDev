@@ -63,21 +63,18 @@
             font-weight: bold;
             margin-bottom: 4px;
         }
-        .input {
-            background-color: var(--text-input-field);
-            border: none;
-            border-radius: 8px;
-            height: 32px;
+        .value {
+            color: var(--very-light-pink);
             font-size: var(--md);
-            padding: 6px;
-            margin-bottom: 24px;
+            margin: 4px 0 32px 0;
         }
-        .primary-button {
+        .secondary-button {
             margin-top: 8px;
-            background-color: var(--hospital-green);
-            border: none;
+            margin-bottom: 24px;
+            background-color: var(--white);
+            border: 1px solid var(--hospital-green);
             border-radius: 8px;
-            color: var(--white);
+            color: var(--hospital-green);
             width: 100%;
             height: 50px;
             cursor: pointer;
@@ -108,14 +105,14 @@
                 <div>
                     <!--Creating Inputs-->
                     <label for="name" class="label">Name</label>
-                    <input class="input input-name" type="text" id="name" placeholder="Jose Rios" />
+                    <p class="value">Jose Rios</p>
                     <label for="email" class="label">Email address</label>
-                    <input class="input input-email" type="text" id="email" placeholder="platzi@example.com" />
+                    <p class="value">joserios@example.com</p>
                     <label for="password" class="label">Password</label>
-                    <input class="input input-password" type="password" id="password" placeholder="*********" />
+                    <p class="value">*********</p>
                 </div>
                 <!--In forms you can use an input type submit to replace a button-->
-                <input class="primary-button login-button" type="submit" value="Create" />
+                <input class="secondary-button login-button" type="submit" value="Edit" />
             </form>
         </div>
     </div>
